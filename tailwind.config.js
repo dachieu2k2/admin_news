@@ -11,6 +11,7 @@ module.exports = {
       success: "#58D05E",
       error: "#F65050",
       secondary: "#EB5757",
+      darkgray: "#DEE1E6",
     },
     extend: {},
   },

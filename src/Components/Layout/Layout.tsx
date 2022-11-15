@@ -3,7 +3,7 @@ import { Link, Outlet } from "react-router-dom";
 export const Layout = () => {
   return (
     <>
-      <div className="flex flex-row h-screen">
+      <div className="flex flex-row h-[1303px] bg-darkgray">
         <div className="hidden md:basis-2/12 md:block bg-primary text-white font-medium h-100 overflow-auto">
           <div className="flex flex-col justify-center ">
             <div className="mt-4 flex flex-col items-center justify-center">
@@ -290,9 +290,9 @@ export const Layout = () => {
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          fill-rule="evenodd"
+                          fillRule="evenodd"
                           d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                          clip-rule="evenodd"
+                          clipRule="evenodd"
                         ></path>
                       </svg>
                     </div>
@@ -316,9 +316,9 @@ export const Layout = () => {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 ></path>
               </svg>
             </div>
