@@ -4,7 +4,13 @@ import "./App.css";
 import { Layout } from "./Components/Layout/Layout";
 import NewsContextProvider from "./Contexts/news";
 import Dashboard from "./Pages/DashBoard/DashBoard";
-import { CreateNews, DetailNews, News, UpdateNews } from "./Pages/News";
+import {
+  CreateNews,
+  DeletedNews,
+  DetailNews,
+  News,
+  UpdateNews,
+} from "./Pages/News";
 
 function App() {
   return (
@@ -15,6 +21,7 @@ function App() {
             <Route index element={<Dashboard />} />
             <Route path="news" element={<News />} />
             <Route path="news-create" element={<CreateNews />} />
+            <Route path="news-deleted" element={<DeletedNews />} />
             <Route path="news/:id" element={<DetailNews />} />
             <Route path="news-update/:id" element={<UpdateNews />} />
           </Route>

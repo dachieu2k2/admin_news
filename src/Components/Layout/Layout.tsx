@@ -91,7 +91,7 @@ export const Layout = () => {
                       />
                     </svg>
 
-                    <Link to="/news/deleted" className="ml-1">
+                    <Link to="/news-deleted" className="ml-1">
                       Deleted News
                     </Link>
                   </li>
