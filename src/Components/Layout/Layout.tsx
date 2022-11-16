@@ -23,14 +23,14 @@ export const Layout = () => {
                   />
                 </svg>
               </div>
-              <div className="text-lg">
+              <div className="text-base lg:text-lg">
                 <span>Health</span>{" "}
                 <span className="text-secondary">Express</span>
               </div>
             </div>
-            <div className="mt-8 ml-8">
+            <div className="mt-2 ml-2 lg:mt-8 lg:ml-8">
               <div>
-                <Link to="/dashboard">Dashboard</Link>
+                <Link to="/">Dashboard</Link>
               </div>
               <div className="mt-2">
                 <Link to="/news">News</Link>
@@ -71,7 +71,7 @@ export const Layout = () => {
                       />
                     </svg>
 
-                    <Link to="/news/create" className="ml-1">
+                    <Link to="/news-create" className="ml-1">
                       Create News
                     </Link>
                   </li>

@@ -1,11 +1,11 @@
 import { useParams } from "react-router-dom";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { NewsContext } from "../../Contexts/news";
 import { Link } from "react-router-dom";
+import { UpdateNews } from "./UpdateNews";
 
 export const DetailNews = () => {
   const { newsState } = useContext(NewsContext);
-  console.log(newsState);
 
   const { id } = useParams();
 
@@ -21,12 +21,12 @@ export const DetailNews = () => {
       <nav className="flex ml-6 mb-5" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3">
           <li className="inline-flex items-center">
-            <a
-              href="#"
+            <Link
+              to="/"
               className="inline-flex items-center text-xs font-normal  hover:text-gray-900"
             >
               Dashboard
-            </a>
+            </Link>
           </li>
           <li>
             <div className="flex items-center">
@@ -42,12 +42,12 @@ export const DetailNews = () => {
                   clipRule="evenodd"
                 ></path>
               </svg>
-              <a
-                href="#"
+              <Link
+                to="/news"
                 className="ml-1 text-xs font-normal text-gray-800 hover:text-gray-600 md:ml-2"
               >
                 News
-              </a>
+              </Link>
             </div>
           </li>
           <li>
@@ -80,7 +80,7 @@ export const DetailNews = () => {
           {news.title}
         </h1>
         <div className="flex mt-3 md:mt-0">
-          <Link to={"/news/create"}>
+          <Link to={`/news-update/${id}`}>
             <button className="flex items-center  bg-white border border-darkgray px-2.5 py-2 rounded shadow text-base transition hover:bg-[#ffffffad]">
               <span>
                 <svg

@@ -46,12 +46,12 @@ export const News = () => {
       <nav className="flex ml-6 mb-5" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3">
           <li className="inline-flex items-center">
-            <a
-              href="#"
+            <Link
+              to="/"
               className="inline-flex items-center text-xs font-normal  hover:text-gray-900"
             >
               Dashboard
-            </a>
+            </Link>
           </li>
           <li>
             <div className="flex items-center">
@@ -79,7 +79,7 @@ export const News = () => {
       </nav>
       <div className="ml-5 mr-5 mb-8 flex justify-between">
         <h1 className="text-2xl font-semibold">News</h1>
-        <Link to={"/news/create"}>
+        <Link to={"/news-create"}>
           <button className="flex items-center text-white bg-primary px-3 py-2 rounded text-base ">
             <span>
               <svg
@@ -234,7 +234,7 @@ export const News = () => {
                   View
                 </div>
               </Link>
-              <Link to={`/news/update/${index}`}>
+              <Link to={`/news-update/${index}`}>
                 <div className="mb-2 flex items-center">
                   <svg
                     className="w-5 h-5 mr-2"
