@@ -3,10 +3,10 @@ import { Link, Outlet } from "react-router-dom";
 export const Layout = () => {
   return (
     <>
-      <div className="flex flex-row h-[1303px] bg-darkgray">
+      <div className="flex flex-row h-[1500px] bg-darkgray ">
         <div className="hidden md:basis-2/12 md:block bg-primary text-white font-medium h-100 overflow-auto">
           <div className="flex flex-col justify-center ">
-            <div className="mt-4 flex flex-col items-center justify-center">
+            <div className="mt-4 flex flex-col items-center justify-center  p-4 ">
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -28,14 +28,14 @@ export const Layout = () => {
                 <span className="text-secondary">Express</span>
               </div>
             </div>
-            <div className="mt-16 ml-8">
+            <div className="mt-8 ml-8">
               <div>
                 <Link to="/dashboard">Dashboard</Link>
               </div>
               <div className="mt-2">
                 <Link to="/news">News</Link>
                 <ul className="text-white-100 text-neutral-300 text-sm">
-                  <li className="flex items-center ml-1 ">
+                  <li className="flex items-center ml-1 mb-1 ">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -55,7 +55,7 @@ export const Layout = () => {
                       List
                     </Link>
                   </li>
-                  <li className="flex items-center ml-1 ">
+                  <li className="flex items-center ml-1 mb-1 ">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -75,7 +75,7 @@ export const Layout = () => {
                       Create News
                     </Link>
                   </li>
-                  <li className="flex items-center ml-1 ">
+                  <li className="flex items-center ml-1 mb-1 ">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -100,7 +100,7 @@ export const Layout = () => {
               <div className="mt-2">
                 <Link to="/news">Feedbacks</Link>
                 <ul className="text-white-100 text-neutral-300 text-sm">
-                  <li className="flex items-center ml-1 ">
+                  <li className="flex items-center ml-1 mb-1 ">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -126,7 +126,7 @@ export const Layout = () => {
               <div className="mt-2">
                 <Link to="/ads">Ads</Link>
                 <ul className="text-white-100 text-neutral-300 text-sm">
-                  <li className="flex items-center ml-1 ">
+                  <li className="flex items-center ml-1 mb-1 ">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -146,7 +146,7 @@ export const Layout = () => {
                       List
                     </Link>
                   </li>
-                  <li className="flex items-center ml-1 ">
+                  <li className="flex items-center ml-1 mb-1 ">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -166,7 +166,7 @@ export const Layout = () => {
                       Create Ads
                     </Link>
                   </li>
-                  <li className="flex items-center ml-1 ">
+                  <li className="flex items-center ml-1 mb-1 ">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -192,7 +192,7 @@ export const Layout = () => {
               <div className="mt-2">
                 <Link to="/users">Users</Link>
                 <ul className="text-white-100 text-neutral-300 text-sm">
-                  <li className="flex items-center ml-1 ">
+                  <li className="flex items-center ml-1 mb-1 ">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -212,7 +212,7 @@ export const Layout = () => {
                       List
                     </Link>
                   </li>
-                  <li className="flex items-center ml-1 ">
+                  <li className="flex items-center ml-1 mb-1 ">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -232,7 +232,7 @@ export const Layout = () => {
                       Create users
                     </Link>
                   </li>
-                  <li className="flex items-center ml-1 ">
+                  <li className="flex items-center ml-1 mb-1 ">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
